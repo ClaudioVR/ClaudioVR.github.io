@@ -1,0 +1,230 @@
+* {
+	padding: 0;
+	margin: 0;
+	--black-border-radius: 2px;
+	
+	--slideUp: slideUp 3s;
+	--slideDown: slideDown 3s;
+	--fadeIn: fadeIn 2s linear 1s forwards;
+}
+
+body {
+	background-color: #eee;
+}
+
+.maleri {
+	width: 200px;
+	height: 200px;
+	margin: 20px auto;
+	box-shadow: 2px 5px 2px #2c2c2c;
+	background-color: cornsilk;
+	border-radius: 3px;
+}
+
+.a,
+.b,
+.c,
+.d {
+	position: relative;
+}
+
+.vertical-thick {
+	width: 33%;
+	height: 100%;
+	background-color: black;
+	border-radius: var(--black-border-radius);
+
+	animation: var(--slideDown);
+}
+
+.tilted {
+	width: 30%;
+	height: 100%;
+	position: absolute;
+	right: 8%;
+	top: 0;
+	background-color: black;
+	transform: skewX(-15deg);
+	transform-origin: top right;
+	border-radius: var(--black-border-radius);
+	
+	opacity: 0;
+	animation: var(--fadeIn);
+}
+
+.tilted-bg {
+	background-color: black;
+	position: absolute;
+	width: 30%;
+	height: 100%;
+	top: 0;
+	right: 8%;
+	border-radius: var(--black-border-radius);
+
+	animation: var(--slideUp);
+}
+
+
+.vertical-thin {
+	width: 6%;
+	height: 100%;
+	background-color: black;
+	position: absolute;
+	left: 30%;
+	border-radius: var(--black-border-radius);
+	
+	opacity: 0;
+	animation: var(--fadeIn);
+}
+
+.d-horizontal-main {
+	background-color: black;
+	width: 100%;
+	height: 20%;
+	position: absolute;
+	top: 100px;
+	border-radius: var(--black-border-radius);
+	
+	animation: slideLeft 3s;
+}
+
+.d-vertical-main {
+	background-color: black;
+	width: 40%;
+	height: 100px;
+	position: absolute;
+	top: 100px;
+	right: 0;
+	border-radius: var(--black-border-radius);
+	
+	animation: var(--slideUp);
+}
+
+.d-small-vertical-1 {
+	background-color: black;
+	width: 6%;
+	height: 60px;
+	position: absolute;
+	top: 100px;
+	left: 3px;
+	border-radius: var(--black-border-radius);
+	
+	opacity: 0;
+	animation: var(--fadeIn);
+}
+
+.d-small-vertical-2 {
+	background-color: black;
+	width: 6%;
+	height: 100px;
+	position: absolute;
+	top: 100px;
+	left: 18px;
+	border-radius: var(--black-border-radius);
+	
+	opacity: 0;
+	animation: var(--fadeIn);
+}
+
+.d-small-vertical-3 {
+	background-color: black;
+	width: 6%;
+	height: 50px;
+	position: absolute;
+	top: 100px;
+	left: 42%;
+	border-radius: var(--black-border-radius);
+	
+	opacity: 0;
+	animation: var(--fadeIn);
+}
+
+.d-small-vertical-4 {
+	background-color: black;
+	width: 6%;
+	height: 95px;
+	position: absolute;
+	top: 100px;
+	left: 51%;
+	border-radius: var(--black-border-radius);
+	
+	opacity: 0;
+	animation: var(--fadeIn);
+}
+
+.signature {
+	margin-top: 50px;
+	
+	opacity: 0;
+	animation: fadeIn 2s 4s forwards; 
+}
+
+.signature h4 {
+	text-transform: capitalize;
+	text-align: center;
+}
+
+.signature p {
+	text-align: center;
+	font-size: 12px;
+}
+
+@media (min-width: 768px) {
+	.collection {
+		margin-top: 15%;
+		display: flex;
+		justify-content: space-around
+	}
+
+	.maleri {
+		margin: 0px 0px 0px 10px;
+	}
+}
+
+@media (min-width: 1024) {
+	.wall {
+		max-width: 1400px;
+	}
+}
+
+/* @keyframes -------------------------*/
+
+@keyframes slideDown {
+	from {
+		transform: translateY(-1000px)
+	}
+
+	to {
+		transform: translateY(0)
+	}
+}
+
+@keyframes slideUp {
+	from {
+		transform: translateY(1000px)
+	}
+
+	to {
+		transform: translateY(0)
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes slideLeft {
+	from {
+		transform: translateX(1000px)
+	}
+	
+	to {
+		transform: translateX(0)
+	}
+}
