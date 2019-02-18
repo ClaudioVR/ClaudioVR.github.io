@@ -17,208 +17,163 @@
 
 <body>
   <!-- navbar-dark bg-dark -->
-  <nav class="navbar sticky-top navbar-expand-lg">
-    <a class="navbar-brand" href="#">Claudio Resicgno</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-      <!-- <span class="navbar-toggler-icon"></span> -->
-      <span class="menu-hamburger">menu</span>
-    </button>
+  <nav class="navbar navbar-dark bg-dark sticky-top navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">Claudio Resicgno</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About me</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#portfolio">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Websites</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-      </ul>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-me">About me</a>
+          </li>
+        </ul>
+      </div>
     </div>
+
   </nav>
 
-  <!-- about me -->
+  <!-- home intro -->
 
-  <div class="about-me container" id="about-me">
-    <div class="row">
+  <div class="about-me container">
+    <div class="row mt-5">
       <div class="col-lg-5">
         <img class="claudio-img" src="./images/Claudio img.jpg" alt="Claudio Recigno">
       </div>
       <div class="col-lg-7">
-        <h4 class="name pt-3">Claudio Rescigno</h4>
-        <h2 class="job">Front-End Developer</h2>
-        <h5 class="city">Oslo, Norway</h5>
+        <h2 class="name pt-3 display-4">Claudio Rescigno</h2>
+        <h3 class="job">Front-End Developer</h4>
+          <h6 class="city ">Oslo, Norway</h6>
 
-        <div class="flags my-lg-5">
-          <img src="./images/flags/france.svg" height="30" alt="" class="">
-          <img src="./images/flags/italy.svg" height="40" alt="" class="">
-          <img src="./images/flags/united-kingdom.svg" height="50" alt="" class="">
-          <img src="./images/flags/norway.svg" height="40" alt="" class="">
-          <img src="./images/flags/spain.svg" height="30" alt="" class="">
-        </div>
+          <div class="personal-statement my-3 p-3">
+            <p class="lead">I am a self-taught Front-End Developer and life-long learner with a passion for web-design and user interfaces.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat eveniet enim earum laudantium nostrum, esse mollitia ullam? Non inventore quaerat sunt, possimus amet maiores. Soluta atque beatae rerum eligendi, vitae.</p>
+          </div>
 
-        <div class="personal-statement">
-          <p class="lead">I am self-taught Front-End Developer and life-long learner with a passion for web-design and user interfaces.</p>
-        </div>
+          <div class="coding-languages">
+            <img src="./svg/iconfinder_jquery_308442.svg" height="50" alt="jquery icon" id="jquery-icon">
+            <img src="./svg/iconfinder_javascript_308441.svg" height="50" alt="javascript icon" id="js-icon">
+            <img src="./svg/iconfinder_html_308440.svg" height="50" alt="html icon" id="html-icon">
+            <img src="./svg/iconfinder_css_308436.svg" height="50" alt="css icon" id="css-icon">
+            <img src="./svg/Vue.js_Logo.svg.png" height="50" alt="vue.js icon" id="vuejs-icon">
+            <img src="./svg/iconfinder_boostrap_308435.svg" height="50" alt="bootstrap icon" id="bootstrap-icon">
+          </div>
 
       </div>
     </div>
   </div>
-  <!-- /about-me -->
+  <!-- /home intro -->
+
+  <!-- portfolio highlights -->
+  <div class="container">
+    <h2 class="display-4 text-center mb-5">Projects</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img src="./test.png" class="img-fluid" alt="">
+          <div class="card-body">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img src="./bootstraptest.png" class="img-fluid" alt="">
+          <div class="card-body">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img src="./test.png" class="img-fluid" alt="">
+          <div class="card-body">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a id="view-portfolio-link" class="btn btn-outline-info" role="button" href="./portfolio.html">View My Full Portfolio</a>
+    </div>
+  </div>
+  <!-- /portfolio higlights -->
 
 
-  <!-- Jumbotron -->
-  <a class="anchor" id="portfolio"></a>
-  <div class="jumbotron jumbotron-fluid">
+  <!-- about me -->
+  <a href="#" id="about-me" class="anchor"></a>
+  <div class=" bg-light mt-5 pt-5">
     <div class="container">
-      <h1 class="display-4">My Portfolio</h1>
-      <p class="lead">A collection of Front-End development projects I've had fun creating...</p>
+      <h2 class="display-4 text-center mb-5">About Me</h2>
+
+      <div class="personal-statement">
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, similique facere magni qui. Minima repellat commodi, facilis odit ex placeat quaerat quis ab nisi odio pariatur et porro temporibus alias!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit odio amet labore minima, consequatur quos ipsa nam eligendi incidunt distinctio, eveniet veritatis cum enim nobis explicabo ullam vero minus laboriosam tempora fugiat
+          delectus itaque accusamus placeat? Quod, iusto. Cum, ullam!</p>
+      </div>
+
+      <div class="social-media-primary text-center">
+        <a href="https://www.facebook.com/claudio.rescigno.359" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://github.com/ClaudioVR?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://no.linkedin.com/in/claudio-rescigno-6b0531177" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+
+      <div class="my-skills">
+        <div class="intro">
+          <div class="typed-div">
+            <span class="" id="typed"></span>
+          </div>
+        </div>
+      </div>
     </div>
-    <br>
-    <div class="text-center d-md-none">
-      <i class='fas fa-arrow-alt-circle-down' style='font-size:36px'></i>
-    </div>
+
   </div>
-  <!-- /jumbotron -->
-
-  <!-- projects -->
-  <div class="all-projects">
-
-    <div class="project">
-      <div class="container">
-        <div class="row">
-          <div class="project-info col-md-6">
-            <h6>Fetch-Api </h6>
-            <h2>Mock Employee list</h2>
-            <p class="">A fun use of Fetch API to create a mock employee database with search functions and a modal window</p>
-            <a class="btn btn-outline-secondary" href="#" role="button">View project</a>
-          </div>
-          <div class="col-md-3 offset-md-3">
-            <img class="" src="./svg/api.svg" alt="api icon">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="project bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 ">
-            <img src="./svg/keyboard.svg" alt="keyboard icon">
-          </div>
-          <div class="project-info col-md-6 offset-md-3">
-            <h6>JavaScript</h6>
-            <h2>Game Show App</h2>
-            <p class="">A JavaScript based game/application inspired by the a favourite of mine, Hang the Man.</p>
-            <a class="btn btn-outline-dark" href="#" role="button">View project</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="project">
-      <div class="container">
-        <div class="row">
-          <div class="project-info col-md-6">
-            <h6>Chart.js</h6>
-            <h2>Dashboard</h2>
-            <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero dolorum nobis assumenda quo, quaerat officiis?</p>
-            <a class="btn btn-outline-secondary" href="#" role="button">View project</a>
-          </div>
-          <div class="col-md-3 offset-md-3">
-            <img class="" src="./svg/dashboard.svg" alt="dashboard icon">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- skills -->
-
-    <div class="my-skills text-center bg-light">
-
-      <div class="intro">
-        <div class="typed-div">
-          <span class="" id="typed"></span>
-        </div>
-      </div>
-
-      <div class="coding-languages">
-        <img src="./svg/iconfinder_html_308440.svg" alt="html icon" id="html-icon">
-        <img src="./svg/iconfinder_css_308436.svg" alt="css icon" id="css-icon">
-        <img src="./svg/iconfinder_javascript_308441.svg" alt="javascript icon" id="js-icon">
-        <img src="./svg/Vue.js_Logo.svg.png" alt="vue.js icon" id="vuejs-icon">
-        <img src="./svg/iconfinder_boostrap_308435.svg" alt="bootstrap icon" id="bootstrap-icon">
-        <img src="./svg/iconfinder_jquery_308442.svg" alt="jquery icon" id="jquery-icon">
-      </div>
-
-    </div>
-    <!-- /skills -->
-
-    <div class="project">
-      <div class="container">
-        <div class="row">
-          <div class="project-info col-md-6">
-            <h6>CSS</h6>
-            <h2>CSS artwork</h2>
-            <p class="">A fun side project based on an artist's work, and recreated using nothing more than HTML and CSS, with a few animations for good measure.</p>
-            <a class="btn btn-outline-secondary" href="#" role="button">View project</a>
-          </div>
-          <div class="col-md-3 offset-md-3">
-            <img class="" src="./svg/sketch.svg" alt="sketch icon">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="project bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 ">
-          <img src="./svg/camera.svg" alt="camera icon">
-        </div>
-        <div class="project-info col-md-6 offset-md-3">
-          <h6>CSS &amp; jQuery</h6>
-          <h2>Responsive Image Gallery</h2>
-          <p class="">A simple but effective photo gallery with modal window functions created using jQuery plugins.</p>
-          <a class="btn btn-outline-dark" href="#" role="button">View project</a>
-        </div>
-      </div>
-    </div>
-  </div>
+  <!-- /about me -->
 
 
-  <!-- /all-projects -->
 
 
 
 
   <!-- footer -->
-  <footer class="text-center" id="contact">
+  <footer class="text-center footer-dark bg-dark" id="contact">
     <div class="social-media">
       <a href="https://www.facebook.com/claudio.rescigno.359" target="_blank"><i class="fab fa-facebook"></i></a>
       <a href="https://github.com/ClaudioVR?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
       <a href="https://no.linkedin.com/in/claudio-rescigno-6b0531177" target="_blank"><i class="fab fa-linkedin"></i></a>
     </div>
     <br>
-    <h4 id="contact">Claudio Rescigno</h4>
+    <p>&copy;2019 Claudio Rescigno</p>
     <br>
 
     <!--		icon info -->
-      <div class="svg-copyright">Icons made by <a href="https://www.flaticon.com/authors/dimitry-miroliubov" title="Dimitry Miroliubov">Dimitry Miroliubov</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is
-        licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-      <div class="svg-copyright">Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
-          title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-      <div class="svg-copyright">Icons made by <a href="https://www.flaticon.com/authors/linector" title="Linector">Linector</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
-          title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+    <div class="svg-copyright">Icons made by <a href="https://www.flaticon.com/authors/dimitry-miroliubov" title="Dimitry Miroliubov">Dimitry Miroliubov</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is
+      licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+    <div class="svg-copyright">Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
+        title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+    <div class="svg-copyright">Icons made by <a href="https://www.flaticon.com/authors/linector" title="Linector">Linector</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
+        title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 
 
   </footer>

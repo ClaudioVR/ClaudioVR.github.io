@@ -1,48 +1,32 @@
 /* styles.css */
-nav {
-  background: black;
-}
-
-.navbar-toggler {
-	border-color: orangered;
-}
-
-.menu-hamburger{
-	color: orangered;
-}
-
-nav a {
-  color: orangered;
-}
-
-nav a:hover {
-  color: white;
-}
 
 .about-me {
-  padding-top: 3rem;
   text-align: center;
-  animation: fadeInDown 2s 1s linear;
 }
 
-/* about me animation */
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translatey(-50px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translatey(0);
-  }
+.coding-languages img {
+  border-radius: 50%;
+  display: none;
 }
 
-/* For the portfolio jumbotron - to deal with sticky navbar */
+#vuejs-icon {
+  /* border: 1px solid lightgrey; */
+  height: 3.1rem;
+}
+
+
+#view-portfolio-link {
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/*  to deal with sticky navbar */
 a.anchor {
     display: block;
     position: relative;
-    top: -50px;
+    top: 0;
     visibility: hidden;
 }
 
@@ -50,6 +34,7 @@ a.anchor {
   height: 10rem;
   border-radius: 50%;
   margin: 0 auto;
+  filter: grayscale(1);
 }
 
 .project img {
@@ -64,28 +49,27 @@ a.anchor {
 }
 
 
-/* my skills & typed.js ------------------------------------ */
+/* about me ------------------------------------ */
+
+.social-media-primary {
+  font-size: 3rem;
+  cursor: pointer;
+}
 
 .my-skills {
   height: 12rem;
+  /* background: red; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.coding-languages img {
-  border-radius: 50%;
-  height: 2.3rem;
-}
-
-#vuejs-icon {
-  /* border: 1px solid lightgrey; */
-  height: 3.1rem;
-}
 
 .intro {
   margin: 2rem 0;
+  /* background: green; */
+  height: 8rem;
 	/* display: flex;
 	justify-content: center;
 	align-items: center; */
@@ -99,18 +83,24 @@ a.anchor {
 	font-size: 1.2rem;
 }
 
+/* Portfolio -------------------------------------------- */
+
+#portfolio-intro {
+  border-bottom: 1px solid black;
+  
+  /* padding: 2rem 0 0; */
+}
+
 
 
 /* Footer ---------------------------------------------- */
 
 footer {
-  background: black;
-  color: orangered;
   padding: 3rem;
 }
 
 .social-media a {
-  color: orangered;
+  color: white;
   font-size: 2rem;
   cursor: pointer;
   margin: 0 .2rem;
@@ -139,6 +129,10 @@ footer {
   #typed,
   .typed-cursor {
     font-size: 1.5rem;
+  }
+
+  .coding-languages img {
+    display: inline-block;
   }
 }
 
@@ -200,6 +194,12 @@ footer {
   .project img {
     height: 15rem;
   }
+
+  root {
+    position: relative;
+  }
+
+
 
 }
 
