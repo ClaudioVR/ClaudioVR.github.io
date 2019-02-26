@@ -4,7 +4,7 @@
 // jQuery typed.js
 $(document).ready(function () {
 	var typed = new Typed('#typed', {
-    strings: ['What could I possibly have to offer, but blood and sweat...'],
+    strings: ['Hi, I\'m Claudio...', 'I\'m a Front-End Developer...', 'I code out of Oslo, Norway...', 'Contact me via my social media!'],
 
     typeSpeed: 40,
     backSpeed: 60,
