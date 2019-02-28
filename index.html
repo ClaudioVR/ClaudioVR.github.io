@@ -33,7 +33,7 @@
             <a class="nav-link" href="./portfolio.html">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about-me">About me</a>
+            <a class="nav-link" href="about-me.html">About me</a>
           </li>
         </ul>
       </div>
@@ -43,125 +43,136 @@
 
   <!-- home intro -->
 
-  <div class="about-me container">
-    <div class="row mt-5">
-      <div class="col-lg-5">
-        <img class="claudio-img" src="./images/Claudio img.jpg" alt="Claudio Recigno">
-      </div>
-      <div class="col-lg-7">
-        <h2 class="name pt-3 display-4">Claudio Rescigno</h2>
-        <h3 class="job">Front-End Developer</h4>
-          <h6 class="city ">Oslo, Norway</h6>
+  <div class=" container">
+    <div class="about-me">
+      <div class="row mt-5">
+        <div class="col-lg-5">
+          <img class="claudio-img" src="./images/Claudio img.jpg" alt="Claudio Recigno">
+        </div>
+        <div class="col-lg-7">
+          <h2 class="name pt-3 display-4">Claudio Rescigno</h2>
+          <h3 class="job">Front-End Developer</h4>
+            <h6 class="city ">Oslo, Norway</h6>
 
-          <div class="personal-statement my-3 p-3">
-            <p class="lead">I am a self-taught Front-End Developer and life-long learner with a passion for web-design and user interfaces.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat eveniet enim earum laudantium nostrum, esse mollitia ullam? Non inventore quaerat sunt, possimus amet maiores. Soluta atque beatae rerum eligendi, vitae.</p>
-          </div>
+            <div class="personal-statement my-3 p-3">
+              <p class="lead" id="typed-intro"></p>
+              <p class="" id="typed-introB"></p>
+            </div>
 
-          <div class="coding-languages">
-            <img src="./svg/iconfinder_jquery_308442.svg" height="50" alt="jquery icon" id="jquery-icon">
-            <img src="./svg/iconfinder_javascript_308441.svg" height="50" alt="javascript icon" id="js-icon">
-            <img src="./svg/iconfinder_html_308440.svg" height="50" alt="html icon" id="html-icon">
-            <img src="./svg/iconfinder_css_308436.svg" height="50" alt="css icon" id="css-icon">
-            <img src="./svg/Vue.js_Logo.svg.png" height="50" alt="vue.js icon" id="vuejs-icon">
-            <img src="./svg/iconfinder_boostrap_308435.svg" height="50" alt="bootstrap icon" id="bootstrap-icon">
-            <img src="./svg/wordpress.png" height="50" alt="wordpress icon" id="wordpress-icon">
-          </div>
 
+            <div class="social-media-primary text-center">
+              <a href="https://www.facebook.com/claudio.rescigno.359" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a href="https://github.com/ClaudioVR?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://no.linkedin.com/in/claudio-rescigno-6b0531177" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="col arrow">
+          <a href="#portfolio-anchor"><img id="arrow" src="./svg/down-arrow.svg" height="50" alt="down arrow to projects"></a>
+        </div>
       </div>
     </div>
   </div>
   <!-- /home intro -->
 
   <!-- portfolio highlights -->
-  <div class="container">
-    <h2 class="display-4 text-center mb-5">Projects</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card mb-4 shadow-sm">
-          <img src="./images/fetch-api.png" class="img-fluid" alt="fetch api employee card">
-          <div class="card-body">
-            <p class="card-text">Fetch API</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <a class="btn btn-outline-secondary" href="https://claudiovr.github.io/Fetch-API/" target="_blank" role="button">View</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card mb-4 shadow-sm">
-          <img src="./images/dashboard2.png" class="img-fluid" alt="">
-          <div class="card-body">
-            <p class="card-text">Dashboard Chart.js</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <a class="btn btn-outline-secondary" href="https://claudiovr.github.io/Dashboard-App/" target="_blank" role="button">View</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card mb-4 shadow-sm">
-          <img src="./images/jungle-mockup.png" class="img-fluid" alt="">
-          <div class="card-body">
-            <p class="card-text">Jungle Mockup</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <a class="btn btn-outline-secondary" href="https://claudiovr.github.io/Jungle-mockup/" target="_blank" role="button">View</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a id="view-portfolio-link" class="btn btn-outline-info" role="button" href="./portfolio.html">View More Projects</a>
-    </div>
-  </div>
-  <!-- /portfolio higlights -->
-
-
-  <!-- about me -->
-  <a href="#" id="about-me" class="anchor"></a>
-  <div class=" bg-light mt-5 pt-5">
+  <div class=" bg-light mt-5 py-5">
     <div class="container">
-      <h2 class="display-4 text-center mb-5">About Me</h2>
 
-      <div class="personal-statement text-center">
-        <p class="lead">In 2018 I transitioned from the tourist and service industry towards web development. After deciding to take some time off work, I found myself diving back into web design, an old hobby of mine. I  completed an intensive online Front-End Development TechDegree at <a href="https://join.teamtreehouse.com/techdegree/" target="_blank">Team Treehouse</a> and continue to learn and experiment with coding on a daily basis. I have a strong understanding of <strong>HTML</strong>, <strong>CSS</strong> and <strong>JavaScript</strong> and various frameworks/libraries such as <strong>jQuery</strong>, <strong>Bootstrap</strong> and <strong>Materialize</strong>. I also enjoy building websites with <strong>Wordpress</strong>, and I am currently learning <strong>Vue.js.</strong> </p>
-        <blockquote class="blockquote text-center">
-          <p class="display-4">"I am always looking to expand <br> my coding horizons"</p>
-        </blockquote>
-
-        <p>I have a solid sevice-minded background from ten years spent in teaching, recruitment, catering and most recently in the tourism and marketing industries for the city of Oslo. I have homed my skills as a creative problem solver, team player and excellent all-round communicator. </p>
-        <p>I am now looking for the oportunity to join a creative team as a junior Front-End Developer.</p>
+      <div class="mb-5" id="portfolio">
+        <div id="portfolio-intro">
+          <a id="portfolio-anchor" class="anchor"></a>
+          <h1 class="display-4">Projects</h1>
+          <p class="lead">I have created a variety of projects, putting into use all of the front-end skills I have learned these last few months.</p>
+          <p>
+            <strong>CSS</strong> |
+            <strong>HTML</strong> |
+            <strong>JavaScript</strong> |
+            <strong>Bootstrap</strong> |
+            <strong>jQuery</strong> |
+            <strong>WordPress</strong> |
+          </p>
+        </div>
       </div>
 
-      <!-- Team Treehouse TechDegree -->
-      <!-- https://www.credential.net/r91xzv4k -->
-
-      <div class="social-media-primary text-center">
-        <a href="https://www.facebook.com/claudio.rescigno.359" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://github.com/ClaudioVR?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://no.linkedin.com/in/claudio-rescigno-6b0531177" target="_blank"><i class="fab fa-linkedin"></i></a>
-      </div>
-
-      <div class="my-skills">
-        <div class="intro">
-          <div class="typed-div">
-            <span class="" id="typed"></span>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="./images/fetch-api.png" class="img-fluid" alt="fetch api employee card">
+            <div class="card-body">
+              <p class="card-text lead">Fetch API</p>
+              <p>Mock employee cards created using CSS and Fetch API to make a request to a mock database. Includes a modal window and search bar.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a class="btn btn-outline-secondary" href="https://claudiovr.github.io/Fetch-API/" target="_blank" role="button">View</a>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="./images/dashboard2.png" class="img-fluid" alt="">
+            <div class="card-body">
+              <p class="card-text lead">Dashboard</p>
+              <p>A fun project using Chart.js and CSS to create a mock dashboard with interactive components. <br><br></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a class="btn btn-outline-secondary" href="https://claudiovr.github.io/Dashboard-App/" target="_blank" role="button">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="./images/jungle-mockup.png" class="img-fluid" alt="">
+            <div class="card-body">
+              <p class="card-text">Jungle Mock Website</p>
+              <p>I recreated Jungle's home page with CSS and some JS to create the modal menu window. Check links in the footer to compare with the original.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a class="btn btn-outline-secondary" href="https://claudiovr.github.io/Jungle-mockup/" target="_blank" role="button">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a id="view-portfolio-link" class="btn btn-outline-info" role="button" href="./portfolio.html">View More Projects</a>
+      </div>
+    </div> <!-- /container -->
+    <!-- /portfolio higlights -->
+  </div>
+
+
+  <!-- My skills -->
+
+  <div class="container py-5 text-center">
+    <h2 class="display-4 text-center mb-5">My skills</h2>
+
+    <div class="coding-languages">
+      <img src="./svg/Vue.js_Logo.svg.png" height="30" alt="vue.js icon" id="vuejs-icon">
+      <img src="./svg/iconfinder_jquery_308442.svg" height="30" alt="jquery icon" id="jquery-icon">
+      <img src="./svg/iconfinder_html_308440.svg" height="50" alt="html icon" id="html-icon">
+      <img src="./svg/iconfinder_css_308436.svg" height="60" alt="css icon" id="css-icon">
+      <img src="./svg/iconfinder_javascript_308441.svg" height="50" alt="javascript icon" id="js-icon">
+      <img src="./svg/iconfinder_boostrap_308435.svg" height="30" alt="bootstrap icon" id="bootstrap-icon">
+      <img src="./svg/wordpress.png" height="20" alt="wordpress icon" id="wordpress-icon">
+    </div>
+
+    <div class="my-skills">
+      <div class="intro">
+        <div class="typed-div">
+          <span class="typed" id="typed-1"></span><br>
+
         </div>
       </div>
     </div>
 
+
+
   </div>
-  <!-- /about me -->
 
-
-
-
+  <!-- /my skills -->
 
 
   <!-- footer -->
@@ -174,10 +185,6 @@
     <br>
     <p>&copy;2019 Claudio Rescigno</p>
     <br>
-
-
-
-
   </footer>
 
 
