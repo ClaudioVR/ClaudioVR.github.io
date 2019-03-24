@@ -3,14 +3,14 @@
 
 // jQuery typed.js
 $(document).ready(function () {
-	var typed = new Typed('#typed-1', {
-    strings: ['I\'m a Front-End Developer...', 'and I code out of Oslo, Norway...','I enjoy coding with: HTML...', 'I enjoy coding with: CSS...', 'I enjoy coding with: and JavaScript...', 'I also like using frameworks...', 'I also like using and libraries...', 'like Vue.js...', 'like jQuery...', 'like and Bootstrap...'],
-		startDelay: 1000,
-    typeSpeed: 50,
-    backSpeed: 40,
-    smartBackspace: true, // this is a default
-    loop: true
-	});
+	// var typed = new Typed('#typed-1', {
+  //   strings: ['I\'m a Front-End Developer...', 'and I code out of Oslo, Norway...','I enjoy coding with: HTML...', 'I enjoy coding with: CSS...', 'I enjoy coding with: and JavaScript...', 'I also like using frameworks...', 'I also like using and libraries...', 'like Vue.js...', 'like jQuery...', 'like and Bootstrap...'],
+	// 	startDelay: 1000,
+  //   typeSpeed: 50,
+  //   backSpeed: 40,
+  //   smartBackspace: true, // this is a default
+  //   loop: true
+	// });
 	var typed2 = new Typed('#typed-intro', {
     strings: ['I am a self-taught Front-End Developer and life-long learner with a passion for web-design and user interfaces...'],
 		startDelay: 1500,
