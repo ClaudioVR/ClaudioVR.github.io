@@ -2,7 +2,6 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-
 strong {
   font-weight: bold;
 }
@@ -12,13 +11,13 @@ strong {
 }
 
 nav {
-  box-shadow: none;
+  box-shadow: none !important;
   margin-top: 2rem;
   margin-bottom: 15rem;
 }
 
 .nav-wrapper a{
-  color: black;
+  color: black !important;
 }
 
 .card-image {
