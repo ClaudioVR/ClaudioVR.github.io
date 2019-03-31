@@ -1,270 +1,227 @@
-/* styles.css */
-
-.about-me {
-  opacity: 0;
-  animation: fadein 1s 1s ease forwards;
+* {
+  font-family: 'Open Sans', sans-serif;
 }
 
-@keyframes fadein {
-    from {
-      opacity: 0;
-      transform: translateY(-70px);
-    }
-    to   {
-      opacity: 1;
-      transform: translateY(0);
-    }
+
+strong {
+  font-weight: bold;
 }
 
-.about-me {
-  text-align: center;
+.py {
+  padding: 3rem 0;
 }
 
-.personal-statement > p {
-  border-left: 2px solid lightgrey;
-  padding-left: 1rem;
-  text-align: justify;
+nav {
+  box-shadow: none;
+  margin-top: 2rem;
+  margin-bottom: 15rem;
 }
 
-.coding-languages img {
-  border-radius: 50%;
-  display: none;
-  transition: all .5s ease;
-  cursor: pointer;
-}
-  .coding-languages img:hover {
-    filter: grayscale(0);
-  }
-
-#vuejs-icon {
-  /* border: 1px solid lightgrey; */
-  /* height: 3.1rem; */
+.nav-wrapper a{
+  color: black;
 }
 
-#view-portfolio-link {
-  margin: 0 auto;
-  padding: 1rem 2rem;
-  cursor: pointer;
-  text-decoration: none;
+.card-image {
+  height: 110px;
 }
 
-.claudio-img {
-  height: 10rem;
-  border-radius: 50%;
-  margin: 0 auto;
+#claudio-img {
   filter: grayscale(1);
+  max-height: 500px;
 }
 
-.project img {
-  height: 10rem;
-  display: none;
+#color-cables {
+  margin: auto;
+  max-width: 400px;
+  display: block;
 }
 
-.project {
-  padding: 2rem 0;
+.portfolio-heading {
+  margin-bottom: 3rem;
+}
+
+
+/* Blobs ----------------------------------- */
+
+.blob-container {
+  position: relative;
+  padding-top: 3rem;
+}
+
+.blob-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.blob {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  color: white;
+  font-family: sans-serif;
   display: flex;
-  align-items: center;
-}
-
-a.anchor {
-    display: block;
-    position: relative;
-    top: -80px;
-    visibility: hidden;
-}
-
-/* about me ------------------------------------ */
-
-.social-media-primary {
-  font-size: 2rem;
-  cursor: pointer;
-}
-
-.social-media-primary a {
-  opacity: 0.5;
-  color: #17a2b8;
-}
-  .social-media-primary a:hover {
-    opacity: 1;
-  }
-
-.my-skills {
-  padding: 0;
-  height: 50px;
-  /* background: red; */
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: -4rem;
+  opacity: 0.9;
 }
 
-.intro {
-  margin: 0;
-  height: 3rem;
-  /* background: green; */
-  width: 80%;
-  padding-left: 22%;
-  text-align: left;
+.blob-1,
+.blob-4 {
+  top: 15%;
+  left: 23%;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  animation-delay: .5s;
+  animation: transform 50s ease-in-out infinite both alternate;
+}
+.blob-2,
+.blob-5 {
+  top: 38%;
+  left: 50%;
+  border-radius: 30% 70% 15% 85% / 48% 54% 46% 52%;
+  animation-delay: .8s;
+  animation: transform 40s ease-in-out infinite both alternate;
+}
+.blob-3,
+.blob-6 {
+  top: 40%;
+  left: 3%;
+  border-radius: 73% 27% 46% 54% / 66% 54% 46% 34%;
+  animation: transform 30s ease-in-out infinite both alternate;
 }
 
-.typed,
-.typed-cursor {
-  text-align: ;
-	color: #9c9c9c;
-	font-family: sans-serif;
-	font-size: 1.2rem;
+.blob-1 {
+  background: linear-gradient(#ce4621, #e44e25);
+}
+.blob-2 {
+  background: linear-gradient(#0d5d98, #1073bb);
+}
+.blob-3 {
+  background: linear-gradient(#548955, #67a969);
+}
+.blob-4 {
+  background: linear-gradient(#4a366d, #5b4386);
+}
+.blob-5 {
+  background: linear-gradient(#304f97, #3558a8);
+}
+.blob-6 {
+  background: linear-gradient(#4dba87, #435466);
 }
 
-#arrow {
-  display: none;
+@keyframes transform
+{
+    0%,
+  100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; }
+   14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; }
+   28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; }
+   42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; }
+   56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; }
+   70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; }
+   84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; }
 }
 
-/* Portfolio -------------------------------------------- */
+/* /Blobs ----------------------------------- */
 
-.card {
-  padding: .5rem;
-  transition: all .3s ease;
-}
+/* Parallax ----------------------------------------------- */
 
-.card:hover {
-  box-shadow: 3px 5px 8px #17a2b8 !important;
-}
-
-#portfolio-intro {
-  border-bottom: 1px solid black;
-
-  /* padding: 2rem 0 0; */
-}
-
-#blockquote {
-  text-align: center;
+.p-header {
+  z-index: 1;
+  color: white;
   margin: auto;
 }
 
-#blockquote p {
-  text-align: left;
-  border-left: 5px solid;
+.parallax img {
+  filter: contrast(30%);
+}
+
+.parallax-container {
+  margin-top: 5rem;
+  height: 600px;
+}
+
+/* /Parallax ----------------------------------------------- */
+
+/* About-me */
+
+/* /About-me */
+
+
+/* Footer */
+
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+
+footer li {
+  margin: 0 0.5rem;
+}
+
+#footer-home-link h5 {
   display: inline-block;
-  padding-left: 1rem;
-}
-
-
-/* Footer ---------------------------------------------- */
-
-footer {
+  border-radius: 5px;
   padding: 1rem;
+  border: 3px solid;
 }
 
-.social-media a {
-  color: white;
-  font-size: 2rem;
-  cursor: pointer;
-  margin: 0 .2rem;
-  outline: none;
-}
-
-.social-media a:hover {
-  color: #17a2b8;
-}
-
-.svg-copyright {
-  font-size: .5rem;
-}
+/* /Footer */
 
 
-
-/* @media query -------------------------------------- */
-/* ------------------------------------------------------------ */
-
-@media (min-width: 576px) {
-
-  .about-me {
-    height: 100vh;
+@media (min-width: 720px) {
+  .blob-1,
+  .blob-4 {
+    left: 30%
   }
+  .blob-2,
+  .blob-5 {
+    top: 45%;
+    left: 50%;
+  }
+  .blob-3,
+  .blob-6 {
+    top: 45%;
+    left: 15%;
+  }
+}
 
-  .typed,
-  .typed-cursor {
+@media (min-width:1200px) {
+  .blob {
+    height: 200px;
+    width: 200px;
+  }
+  .blob h6 {
     font-size: 1.5rem;
   }
-
-  .coding-languages img {
-    display: inline-block;
+  .p-large {
+    font-size: 1.25rem;
   }
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-
-  .project img {
-    display: inline-block!important;
+@media (min-width:1800px) {
+  .blob {
+    height: 250px;
+    width: 250px;
   }
-
-  .project {
-    padding: 2rem
-  }
-
-  .typed,
-  .typed-cursor {
+  .blob h6 {
     font-size: 2rem;
   }
-
-  .my-skills {
-    height: 18rem;
+  .blob-1,
+  .blob-4 {
+    top: 5%;
+    left: 30%
   }
-
-  .coding-languages img {
-    /* height: 5rem; */
-    margin: 0 .5rem;
+  .blob-2,
+  .blob-5 {
+    top: 45%;
+    left: 50%;
   }
-
-  #vuejs-icon {
-    /* height: 6.5rem; */
+  .blob-3,
+  .blob-6 {
+    top: 45%;
+    left: 15%;
   }
-
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-
-  .claudio-img {
-    height: 25rem;
-  }
-
-  .about-me {
-    display: flex;
-    align-items: center;
-  }
-
-  .project {
-    height: 20rem;
-  }
-
-  .name {
-    font-size: 5rem;
-  }
-
-  .flags img {
-    padding: 0 1.5rem;
-  }
-
-  .project img {
-    height: 15rem;
-  }
-
-  root {
-    position: relative;
-  }
-
-
-
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  #arrow {
-    display: inline-block;
-    opacity: .5;
-    margin-top: 7rem;
+  .blob-row {
+    margin-top: 3rem;
   }
 }

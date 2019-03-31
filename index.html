@@ -1,217 +1,258 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="./bootstrap-4.3.0-dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./bootstrap-4.3.0-dist/css/bootstrap-grid.min.css">
-  <!-- Icons -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
-  <!-- Styles -->
   <link rel="stylesheet" href="styles.css">
-  <title>Claudio Rescigno</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <title>Claudio Rescigno Portfolio</title>
 </head>
 
 <body>
-  <!-- navbar-dark bg-dark -->
-  <nav class="navbar navbar-dark bg-dark sticky-top navbar-expand-lg">
-    <div class="container">
-      <a class="navbar-brand" href="#">Claudio Resicgno</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./portfolio.html">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="my-story.html">My story</a>
-          </li>
+  <nav class="white">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo hide-on-small-only">claudio rescigno</a>
+        <a href="#!" class="brand-logo show-on-small hide-on-med-and-up">claudio R.</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="portfolio.html">portfolio</a></li>
+          <li><a href="#about-me">about me</a></li>
+          <li><a href="https://www.facebook.com/claudio.rescigno.359" target="_blank"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="https://no.linkedin.com/in/claudio-rescigno-6b0531177" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+          <li> <a href="https://github.com/ClaudioVR?tab=repositories" target="_blank"><i class="fab fa-github"></i></a></li>
         </ul>
       </div>
     </div>
-
   </nav>
 
-  <!-- home intro -->
-
-  <div class=" container">
-    <div class="about-me">
-      <div class="row mt-5">
-        <div class="col-lg-5">
-          <img class="claudio-img" src="./images/Claudio img.jpg" alt="Claudio Recigno">
-        </div>
-        <div class="col-lg-7">
-          <h2 class="name pt-3 display-4">Claudio Rescigno</h2>
-          <h3 class="job">Front-End Developer</h4>
-            <h6 class="city ">Oslo, Norway</h6>
-
-            <div class="personal-statement my-3 p-3">
-              <p class="lead" id="typed-intro"></p>
-              <p class="" id="typed-introB"></p>
-            </div>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="portfolio.html">portfolio</a></li>
+    <li><a href="#about-me">about me</a></li>
+  </ul>
 
 
-            <div class="social-media-primary text-center">
-              <a href="https://www.facebook.com/claudio.rescigno.359" target="_blank"><i class="fab fa-facebook"></i></a>
-              <a href="https://github.com/ClaudioVR?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="https://no.linkedin.com/in/claudio-rescigno-6b0531177" target="_blank"><i class="fab fa-linkedin"></i></a>
-            </div>
-        </div>
-        <div class="col arrow">
-          <a href="#portfolio-anchor"><img id="arrow" src="./svg/down-arrow.svg" height="50" alt="down arrow to projects"></a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- /home intro -->
-
-  <!-- portfolio highlights -->
-  <div class=" bg-light mt-5 py-5">
+  <!-- First 4 projects  -->
+  <div class="row">
     <div class="container">
 
-      <div class="mb-5" id="portfolio">
-        <div id="portfolio-intro">
-          <a id="portfolio-anchor" class="anchor"></a>
-          <h1 class="display-4">Projects</h1>
-          <p class="lead">I have created a variety of projects, putting into use all of the front-end skills I have acquired so far.</p>
+      <div class="col s12 m6 l3">
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/fetch-api.png">
+          </div>
+          <div class="card-content">
+            <h5>Fetch API</h5>
+            <p>Using <strong>Fetch API</strong> to create mock employee cards with search bar and modal window.</p>
+          </div>
+          <div class="card-action">
+            <a class="blue-grey darken-4 waves-effect waves-light btn" target="_blank" href="https://claudiovr.github.io/Fetch-API/">View Project</a>
+          </div>
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img src="./images/fetch-api.png" class="img-fluid" alt="fetch api employee card">
-            <div class="card-body">
-              <p class="card-text lead">Fetch API</p>
-              <p>Mock employee cards created using CSS and Fetch API to make a request to a mock database. Includes a modal window and search bar.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a class="btn btn-outline-info" href="https://claudiovr.github.io/Fetch-API/" target="_blank" role="button">View</a>
-                </div>
-              </div>
-            </div>
+      <div class="col s12 m6 l3">
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/vue-button-app.png">
+          </div>
+          <div class="card-content">
+            <h5>Button App</h5>
+            <p>A <strong>Vue.js</strong> application that styles buttons and provides a CSS snippet for use in your code.
+              <br>
+            </p>
+          </div>
+          <div class="card-action">
+            <a class="blue-grey darken-4 waves-effect waves-light btn" target="_blank" href="https://vue-button-making-app.netlify.com/?_ga=2.203824720.1932862492.1551723680-224991128.1551550762">View Project</a>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img src="./images/vue-button-app.png" class="img-fluid" alt="">
-            <div class="card-body">
-              <p class="card-text lead">Vue.js App</p>
-              <p>A Vue.js application where you can style a button and copy the CSS snippet for use in your code.<br><br></p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a class="btn btn-outline-info" href="https://vue-button-making-app.netlify.com/?_ga=2.203824720.1932862492.1551723680-224991128.1551550762" target="_blank" role="button">View</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img src="./images/jungle-mockup.png" class="img-fluid" alt="">
-            <div class="card-body">
-              <p class="card-text lead">Jungle Mock Website</p>
-              <p>I recreated Jungle's home page with CSS and some JS to create the modal menu window. Check links in the footer to compare with the original.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a class="btn btn-outline-info" href="https://claudiovr.github.io/Jungle-mockup/" target="_blank" role="button">View</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a id="view-portfolio-link" class="btn btn-info" role="button" href="./portfolio.html">View More Projects</a>
       </div>
-    </div> <!-- /container -->
-    <!-- /portfolio higlights -->
+
+      <div class="col s12 m6 l3">
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/jungle-mockup.png">
+          </div>
+          <div class="card-content">
+            <h5>JUNGLE Homepage</h5>
+            <p>Recreating music band Jungle's homepage with <strong>CSS</strong> and <strong>JavaScript</strong>.
+            </p>
+          </div>
+          <div class="card-action">
+            <a class="blue-grey darken-4 waves-effect waves-light btn" target="_blank" href="https://claudiovr.github.io/Jungle-mockup/">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m6 l3">
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/jojojayne.png">
+          </div>
+          <div class="card-content">
+            <h5>JojoJayne.com</h5>
+            <p>A fully working website and blog created using the <strong>Wordpress</strong> Salient theme.
+              <br>
+            </p>
+          </div>
+          <div class="card-action">
+            <a class="blue-grey darken-4 waves-effect waves-light btn" target="_blank" href="http://jojojayne.com/">View Project</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
+  <!-- /First 4 projects  -->
+
+  <div class="row">
+    <div class="center-align">
+      <a class="waves-effect waves-light blue-grey darken-4 lighten-2 btn-large" href="portfolio.html"><i class="material-icons right">folder_open</i>View Portfolio</a>
+    </div>
+  </div>
+
+  <!-- Parallax 1 -->
+  <div class="parallax-container">
+    <div class="parallax valign-wrapper">
+      <div class="p-header">
+        <h1 class="center-align">Front-End Developer</h1>
+        <h3 class="center-align">Oslo, norway</h3>
+      </div>
+      <img src="./images/apple-black-and-white-black-and-white-169573.jpg" alt="laptop and coffee mug">
+    </div>
+  </div>
+  <!-- /Parallax 1 -->
+
+  <!-- About-me -->
+  <div class="row py" id="about-me">
+    <div class="container">
+      <div class="col s12 m6" data-aos="fade-right">
+        <img class="responsive-img" id="claudio-img" src="./images/Claudio img.jpg" alt="Claudio Rescigno">
+      </div>
+      <div class="col s12 m6" data-aos="fade-left">
+        <h3>Claudio Rescigno</h3>
+        <p class="p-large">I am an aspiring front-end developer with creative problem-solving skills looking for opportunities within a creative team focused on creating great user experiences.</p>
+        <p class="p-large">I first started learning web development as a teenager, later taking some courses during my university days, and eventually diving back into it years later. In 2018 I enrolled in the TeamTreehouse Front-End Development TechDegree, completing various projects and becoming proficient in the 3 main front-end languages and various libraries and frameworks.
+        <p class="p-large">I am now looking for a new home where I can contribute with my current skills as a junior developer whilst continuing to learn new and exciting technologies.</p>
+        <p class="p-large">Message me on LinkedIn <a href="https://no.linkedin.com/in/claudio-rescigno-6b0531177" target="_blank"><i class="fab fa-linkedin"></i></a></p>
+        <!-- <img class="center-align" src="./images/color-cables.jpg" alt="coloured cables" id="color-cables"> -->
+      </div>
+    </div>
+  </div>
+  <!-- /About-me -->
+
+  <!-- Parallax 2 -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="./images/background-bit-business-2004161.jpg" alt="coding image">
+    </div>
+  </div>
+  <!-- /Parallax 2 -->
+
+
+  <!-- https://github.com/michalsnik/aos -->
+  <!-- animate on scroll -->
 
   <!-- My skills -->
-
-  <div class="container py-5">
-
-    <div class="mb-5" id="portfolio">
-      <div id="portfolio-intro">
-        <a id="portfolio-anchor" class="anchor"></a>
-        <h1 class="display-4">My Skills</h1>
-        <!-- <p>
-          <strong>CSS</strong> |
-          <strong>HTML</strong> |
-          <strong>JavaScript</strong> |
-          <strong>Vue.js</strong> |
-          <strong>Bootstrap</strong> |
-          <strong>jQuery</strong> |
-          <strong>WordPress</strong> |
-        </p> -->
-      </div>
-
-      <div class="coding-languages m-3 text-center">
-        <img src="./svg/Vue.js_Logo.svg.png" height="50" alt="vue.js icon" id="vuejs-icon">
-        <img src="./svg/iconfinder_jquery_308442.svg" height="50" alt="jquery icon" id="jquery-icon">
-        <img src="./svg/iconfinder_html_308440.svg" height="50" alt="html icon" id="html-icon">
-        <img src="./svg/iconfinder_css_308436.svg" height="50" alt="css icon" id="css-icon">
-        <img src="./svg/iconfinder_javascript_308441.svg" height="50" alt="javascript icon" id="js-icon">
-        <img src="./svg/iconfinder_boostrap_308435.svg" height="50" alt="bootstrap icon" id="bootstrap-icon">
-        <img src="./svg/wordpress.png" height="50" alt="wordpress icon" id="wordpress-icon">
-      </div>
-
-      <p class="lead text-center">My <strong>Front-End</strong> skills include a solid understanding of HTML5, CSS3, JavaScript including various other libraires and frameworks, including <strong>jQuery</strong>, <strong>Bootstrap</strong>, and <strong>Vue.js</strong>.</p>
-
-      <p class="text-center">
-        <strong>CSS Flexbox</strong> |
-        <strong>CSS Grid</strong> |
-        <strong>Object Orientated JavaScript</strong> |
-        <br>
-        <strong>Responsiveness</strong> |
-        <strong>Reusable Components</strong> |
-        <strong>Clean and Syntactic HTML</strong> |
-      </p>
-
-    <div class="text-center">
-      <a id="view-portfolio-link" class="btn btn-outline-info mt-3" role="button" href="./my-story.html">More About Me</a>
-    </div>
-
-    </div>
-
-    <!-- <div class="my-skills">
-      <div class="intro">
-        <div class="typed-div">
-          <span class="typed" id="typed-1"></span><br>
+  <div class="row blob-row">
+    <div class="container">
+      <div class="col s12 m6" data-aos="fade-right">
+        <div class="blob-container">
+          <div class="blob blob-1">
+            <h6>HTML5</h6>
+          </div>
+          <div class="blob blob-2">
+            <h6>CSS3</h6>
+          </div>
+          <div class="blob blob-3">
+            <h6>JavaScript</h6>
+          </div>
         </div>
       </div>
-    </div> -->
-
-  </div>
-  <!-- /my skills -->
-
-  <!-- footer -->
-  <footer class="text-center footer-dark bg-dark" id="contact">
-    <div class="social-media">
-      <a href="https://www.facebook.com/claudio.rescigno.359" target="_blank"><i class="fab fa-facebook"></i></a>
-      <a href="https://github.com/ClaudioVR?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://no.linkedin.com/in/claudio-rescigno-6b0531177" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <div class="col s12 m6" data-aos="fade-left">
+        <h2>Front-End Development</h2>
+        <p class="p-large">I have a solid understanding of all three front-end languages. I am up to date on the latest HTML5 tags and the importance of good syntactic code. </p>
+        <p class="p-large">I have extensively explored the latest tools available in CSS3, including Grid, Flexbox, and responsive design, as well as the latest animation functions. I am currently exploring the world of 3D animations.</p>
+        <p class="p-large">I have good knowledge of Object Orientated JavaScript and I continue to explore and discover the hidden gems of this ever-evolving language.</p>
+      </div>
     </div>
-    <br>
-    <p>&copy;2019 Claudio Rescigno</p>
-    <br>
+  </div>
+
+  <div class="row blob-row">
+    <div class="container">
+      <div class="col s12 m6" data-aos="fade-right">
+        <h2>Libraries &amp; Frameworks</h2>
+        <p class="p-large">CSS libraries like Bootstrap allow me to create quick and responsive web projects. This portfolio page is create using Materialize.</p>
+        <p class="p-large">I am comfortable using jQuery to trasverse the DOM and quickly apply plugins and changes to my pages and projects.</p>
+        <p class="p-large">I have recently started learning Vue.js and the importance of reusable components. This easy to use framework is proving a great tool to have.</p>
+      </div>
+      <div class="col s12 m6" data-aos="fade-left">
+        <div class="blob-container">
+          <div class="blob blob-4">
+            <h6>Bootstrap</h6>
+          </div>
+          <div class="blob blob-5">
+            <h6>jQuery</h6>
+          </div>
+          <div class="blob blob-6">
+            <h6>Vue.js</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /My skills -->
+
+  <!-- Parallax 3 -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="./images/business-computer-connection-270640.jpg" alt="">
+    </div>
+  </div>
+  <!-- /Parallax 3 -->
+
+  <footer class="page-footer white">
+    <div class="container">
+      <div class="row center-align">
+        <a id="footer-home-link" href="index.html"><h5 class="black-text">Claudio Rescigno</h5></a>
+        <p class="black-text text-lighten-4">Front-End Developer</p>
+        <p class="black-text">Oslo, Norway</p>
+        <ul>
+          <li><a href="https://www.facebook.com/claudio.rescigno.359" target="_blank"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="https://no.linkedin.com/in/claudio-rescigno-6b0531177" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+          <li> <a href="https://github.com/ClaudioVR?tab=repositories" target="_blank"><i class="fab fa-github"></i></a></li>
+        </ul>
+      </div>
+    </div>
   </footer>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="./bootstrap-4.3.0-dist/js/bootstrap.bundle.min.js"></script>
-  <script src="./bootstrap-4.3.0-dist/js/bootstrap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
-  <script src="script.js"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      delay: 200,
+      duration: 800
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.parallax');
+      var instances = M.Parallax.init(elems);
+      var sidenav = document.querySelectorAll('.sidenav');
+      var instances2 = M.Sidenav.init(sidenav);
+    });
+  </script>
+
 </body>
 
 </html>

@@ -1,240 +1,272 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="./bootstrap-4.3.0-dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./bootstrap-4.3.0-dist/css/bootstrap-grid.min.css">
-  <!-- Icons -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
-  <!-- Styles -->
   <link rel="stylesheet" href="styles.css">
-  <title>Claudio Rescigno</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <title>Claudio Rescigno Portfolio</title>
 </head>
 
 <body>
 
-  <!-- navbar-dark bg-dark -->
-  <nav class="navbar navbar-dark bg-dark sticky-top navbar-expand-lg">
+  <nav class="white">
     <div class="container">
-      <a class="navbar-brand" href="./index.html">Claudio Resicgno</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="my-story.html">My story</a>
-          </li>
-
+      <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo hide-on-small-only">claudio rescigno</a>
+        <a href="index.html" class="brand-logo show-on-small hide-on-med-and-up">claudio R.</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html">home</a></li>
+          <li><a href="index.html#about-me">about me</a></li>
+          <li><a href="https://www.facebook.com/claudio.rescigno.359" target="_blank"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="https://no.linkedin.com/in/claudio-rescigno-6b0531177" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+          <li> <a href="https://github.com/ClaudioVR?tab=repositories" target="_blank"><i class="fab fa-github"></i></a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Jumbotron -->
-      <div class="container my-5" id="portfolio">
-        <div id="portfolio-intro">
-          <h1 class="display-4">My Portfolio</h1>
-          <p class="lead">Here's some more Front-End Development projects of mine.</p>
-          <p>
-            <strong>CSS</strong> |
-            <strong>HTML</strong> |
-            <strong>JavaScript</strong> |
-            <strong>Bootstrap</strong> |
-            <strong>jQuery</strong> |
-            <strong>WordPress</strong> |
-          </p>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="index.html">home</a></li>
+    <li><a href="index.html#about-me">about me</a></li>
+  </ul>
+
+  <div class="row center-align">
+    <h1 class="portfolio-heading">Portfolio Page</h1>
+  </div>
+
+  <!--  4 projects  -->
+  <div class="row">
+    <div class="container">
+
+      <div class="col s12 m6 l3">
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/game-app.png">
+          </div>
+          <div class="card-content">
+            <h5>Game Show App</h5>
+            <p>A simple and fun guessing game created using <strong>JavaScript</strong></p>
+            <br>
+          </div>
+          <div class="card-action">
+            <a class="blue waves-effect waves-light btn" target="_blank" href="https://claudiovr.github.io/Game_show_app/">View Project</a>
+          </div>
         </div>
       </div>
 
-
-  <!-- /jumbotron -->
-
-  <!-- projects -->
-  <div class="album py-5 bg-light">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <img src="./images/game-app.png" class="img-fluid" alt="">
-              <div class="card-body">
-                <p class="card-text lead">Game Show App</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a class="btn btn-outline-info" href="https://claudiovr.github.io/Game_show_app/" target="_blank" role="button">View</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <div class="col s12 m6 l3">
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/gallery.png">
           </div>
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <img src="./images/gallery.png" class="img-fluid" alt="">
-              <div class="card-body">
-                <p class="card-text lead">Interactive Photo Gallery</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a class="btn btn-outline-info" href="https://claudiovr.github.io/Photo-Gallery-P5/" target="_blank" role="button">View</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="card-content">
+            <h5>Photo Gallery</h5>
+            <p>Interactive gallery created with <strong>jQuery</strong> plugins. Includes a search bar and modal window.</p>
           </div>
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <img src="./images/facebook-mockup.png" class="img-fluid" alt="">
-              <div class="card-body">
-                <p class="card-text lead">Facebook Login Page</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a class="btn btn-outline-info" href="https://claudiovr.github.io/Facebook-Mockup/" target="_blank" role="button">View</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="card-action">
+            <a class="blue waves-effect waves-light btn" target="_blank" href="https://claudiovr.github.io/Photo-Gallery-P5/">View Project</a>
           </div>
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <img src="./images/aleros-art.png" class="img-fluid" alt="">
-              <div class="card-body">
-                <p class="card-text lead">CSS Art</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a class="btn btn-outline-info" href="https://claudiovr.github.io/CSS-Art-Alero/" target="_blank" role="button">View</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <img src="./images/currency-converter.png" class="img-fluid" alt="">
-              <div class="card-body">
-                <p class="card-text lead">Currency Converter</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a class="btn btn-outline-info" href="https://claudiovr.github.io/Currency--Converter/" target="_blank" role="button">View</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <img src="./images/jojojayne.png" class="img-fluid" alt="">
-              <div class="card-body">
-                <p class="card-text lead">WordPress JoJoJayne.com</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a class="btn btn-outline-info" href="http://jojojayne.com/" target="_blank" role="button">View</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <img src="./images/fetch-api.png" class="img-fluid" alt="fetch api employee card">
-              <div class="card-body">
-                <p class="card-text lead">Fetch API</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a class="btn btn-outline-info" href="https://claudiovr.github.io/Fetch-API/" target="_blank" role="button">View</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <img src="./images/dashboard2.png" class="img-fluid" alt="">
-              <div class="card-body">
-                <p class="card-text lead">Dashboard Chart.js</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a class="btn btn-outline-info" href="https://claudiovr.github.io/Dashboard-App/" target="_blank" role="button">View</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <img src="./images/jungle-mockup.png" class="img-fluid" alt="">
-              <div class="card-body">
-                <p class="card-text lead">Jungle Mockup</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a class="btn btn-outline-info" href="https://claudiovr.github.io/Jungle-mockup/" target="_blank" role="button">View</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <img src="./images/vue-button-app.png" class="img-fluid" alt="">
-              <div class="card-body">
-                <p class="card-text lead">Vue.js App</p>
-                <p>A Vue.js application where you can style a button and copy the CSS snippet for use in your code.<br><br></p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a class="btn btn-outline-info" href="https://vue-button-making-app.netlify.com/?_ga=2.203824720.1932862492.1551723680-224991128.1551550762" target="_blank" role="button">View</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
         </div>
       </div>
+
+      <div class="col s12 m6 l3">
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/facebook-mockup.png">
+          </div>
+          <div class="card-content">
+            <h5>Facebook Login</h5>
+            <p>Recreating the Facebook login page with just some <strong>CSS</strong> and a little <strong>JS</strong>.</p>
+            <br>
+          </div>
+          <div class="card-action">
+            <a class="blue waves-effect waves-light btn" target="_blank" href="https://claudiovr.github.io/Facebook-Mockup/">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m6 l3">
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/aleros-art.png">
+          </div>
+          <div class="card-content">
+            <h5>CSS Art</h5>
+            <p>Bringing canvasses to life with <strong>CSS</strong>, in thisproject based on real life art.</p>
+            <br>
+          </div>
+          <div class="card-action">
+            <a class="blue waves-effect waves-light btn" target="_blank" href="https://claudiovr.github.io/CSS-Art-Alero/">View Project</a>
+          </div>
+        </div>
+      </div>
+
     </div>
+  </div>
+  <!-- /4 projects  -->
 
-  <!-- /all-projects -->
+  <!--  4 projects  -->
+  <div class="row">
+    <div class="container">
 
+      <div class="col s12 m6 l3">
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/fetch-api.png">
+          </div>
+          <div class="card-content">
+            <h5>Fetch API</h5>
+            <p>Using <strong>Fetch API</strong> to create mock employee cards. Includes a search bar and modal window.</p>
+          </div>
+          <div class="card-action">
+            <a class="blue waves-effect waves-light btn" target="_blank" href="https://claudiovr.github.io/Fetch-API/">View Project</a>
+          </div>
+        </div>
+      </div>
 
+      <div class="col s12 m6 l3">
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/vue-button-app.png">
+          </div>
+          <div class="card-content">
+            <h5>Button App</h5>
+            <p>A <strong>Vue.js</strong> application that styles buttons and provides a CSS snippet for use in your code.
+              <br>
+            </p>
+          </div>
+          <div class="card-action">
+            <a class="blue waves-effect waves-light btn" target="_blank" href="https://vue-button-making-app.netlify.com/?_ga=2.203824720.1932862492.1551723680-224991128.1551550762">View Project</a>
+          </div>
+        </div>
+      </div>
 
+      <div class="col s12 m6 l3">
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/jungle-mockup.png">
+          </div>
+          <div class="card-content">
+            <h5>JUNGLE Homepage</h5>
+            <p>Recreating music band Jungle's homepage with <strong>CSS</strong> and <strong>JavaScript</strong>.
+            </p>
+          </div>
+          <div class="card-action">
+            <a class="blue waves-effect waves-light btn" target="_blank" href="https://claudiovr.github.io/Jungle-mockup/">View Project</a>
+          </div>
+        </div>
+      </div>
 
-  <!-- footer -->
-  <footer class="text-center footer-dark bg-dark" id="contact">
-    <div class="social-media">
-      <a href="https://www.facebook.com/claudio.rescigno.359" target="_blank"><i class="fab fa-facebook"></i></a>
-      <a href="https://github.com/ClaudioVR?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://no.linkedin.com/in/claudio-rescigno-6b0531177" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <div class="col s12 m6 l3">
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/jojojayne.png">
+          </div>
+          <div class="card-content">
+            <h5>JojoJayne.com</h5>
+            <p>A fully working website and blog created using the <strong>Wordpress</strong> Salient theme.
+              <br>
+            </p>
+          </div>
+          <div class="card-action">
+            <a class="blue waves-effect waves-light btn" target="_blank" href="http://jojojayne.com/">View Project</a>
+          </div>
+        </div>
+      </div>
+
     </div>
-    <br>
-    <p>&copy;2019 Claudio Rescigno</p>
-    <br>
+  </div>
+  <!-- /4 projects  -->
+
+  <!--  4 projects  -->
+  <div class="row">
+    <div class="container">
+
+      <div class="col s12 m6 l3">
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/dashboard2.png">
+          </div>
+          <div class="card-content">
+            <h5>Dashboard</h5>
+            <p>A mock dashboard with interactive and responsive charts, using <strong>Charts.js</strong>.</p>
+          </div>
+          <div class="card-action">
+            <a class="blue waves-effect waves-light btn" target="_blank" href="https://claudiovr.github.io/Dashboard-App/">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m6 l3">
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/currency-converter.png">
+          </div>
+          <div class="card-content">
+            <h5>Currency Converter</h5>
+            <p>A simple currency converter, created in the backseat of a car as part of a bet.</p>
+          </div>
+          <div class="card-action">
+            <a class="blue waves-effect waves-light btn" target="_blank" href="https://claudiovr.github.io/Currency--Converter/">View Project</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- /4 projects  -->
 
 
+  <!-- Parallax 3 -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="./images/business-computer-connection-270640.jpg" alt="">
+    </div>
+  </div>
+  <!-- /Parallax 3 -->
+
+  <footer class="page-footer white">
+    <div class="container">
+      <div class="row center-align">
+        <a id="footer-home-link" href="index.html"><h5 class="black-text">Claudio Rescigno</h5></a>
+        <p class="black-text text-lighten-4">Front-End Developer</p>
+        <p class="black-text">Oslo, Norway</p>
+        <ul>
+          <li><a href="https://www.facebook.com/claudio.rescigno.359" target="_blank"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="https://no.linkedin.com/in/claudio-rescigno-6b0531177" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+          <li> <a href="https://github.com/ClaudioVR?tab=repositories" target="_blank"><i class="fab fa-github"></i></a></li>
+        </ul>
+      </div>
+    </div>
   </footer>
-  <!-- /footer -->
 
 
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800
+    });
 
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.parallax');
+      var instances = M.Parallax.init(elems);
+      var sidenav = document.querySelectorAll('.sidenav');
+      var instances2 = M.Sidenav.init(sidenav);
+    });
+  </script>
 
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="./bootstrap-4.3.0-dist/js/bootstrap.bundle.min.js"></script>
-  <script src="./bootstrap-4.3.0-dist/js/bootstrap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
-  <script src="script.js"></script>
 </body>
 
 </html>
