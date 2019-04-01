@@ -189,22 +189,28 @@ nav {
 }
 
 .blob-1 {
-  background: linear-gradient(#ce4621, #e44e25);
+  background-color: #cd004d;
+  /* background: linear-gradient(#ce4621, #e44e25); */
 }
 .blob-2 {
-  background: linear-gradient(#0d5d98, #1073bb);
+  background-color: #008ad2;
+  /* background: linear-gradient(#0d5d98, #1073bb); */
 }
 .blob-3 {
-  background: linear-gradient(#548955, #67a969);
+  background-color: #0cb14b;
+  /* background: linear-gradient(#548955, #67a969); */
 }
 .blob-4 {
-  background: linear-gradient(#4a366d, #5b4386);
+  background-color: #f37020;
+  /* background: linear-gradient(#4a366d, #5b4386); */
 }
 .blob-5 {
-  background: linear-gradient(#304f97, #3558a8);
+  background-color: #6460ac;
+  /* background: linear-gradient(#304f97, #3558a8); */
 }
 .blob-6 {
-  background: linear-gradient(#4dba87, #435466);
+  background-color: #fcb712;
+  /* background: linear-gradient(#4dba87, #435466); */
 }
 
 @keyframes transform
