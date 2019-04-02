@@ -120,12 +120,20 @@ nav {
 /* /Rotating cube ----------------------- */
 
 .card-image {
-  height: 110px;
+  min-height: 110px;
+}
+
+.card {
+  height: 355px;
+}
+
+.card-content {
+  height: 150px;
 }
 
 #claudio-img {
   filter: grayscale(1);
-  max-height: 500px;
+  max-height: 570px;
 }
 
 #color-cables {
