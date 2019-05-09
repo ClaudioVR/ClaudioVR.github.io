@@ -40,7 +40,7 @@ nav {
 	position: relative;
 	transform-style: preserve-3d;
 	transition: transform 1s;
-	transform: translateZ(-100px);
+	transform: translateZ(0);
 	animation: rotate 15s ease infinite;
 }
 
@@ -134,8 +134,6 @@ nav {
 }
 
 /* /Cards --------------------------------- */
-
-
 
 #claudio-img {
   filter: grayscale(1);
@@ -304,6 +302,7 @@ footer li {
 
 /* /Footer */
 
+/* Media queries --------------------------------------- */
 
 @media (min-width: 720px) {
   .blob-1,
@@ -334,20 +333,40 @@ footer li {
     font-size: 1.25rem;
   }
   .scene {
-    width: 400px;
-    height: 400px;
-    perspective: 600px;
+    width: 250px;
+    height: 250px;
+    perspective: 800px;
   }
   .cube__face {
-    width: 400px;
-    height: 400px;
+    width: 250px;
+    height: 250px;
   }
   .cube {
-    transform: translateZ(-200px);
+    transform: translateZ(-100px);
   }
   .cube p {
     font-size: 2.5rem;
   }
+
+  .cube__face--front {
+  	transform: rotateY(0deg) translateZ(125px);
+  }
+  .cube__face--back {
+  	transform: rotateY(180deg) translateZ(125px);
+  }
+  .cube__face--right {
+  	transform: rotateY(90deg) translateZ(125px);
+  }
+  .cube__face--left {
+  	transform: rotateY(-90deg) translateZ(125px);
+  }
+  .cube__face--top {
+  	transform: rotateX(90deg) translateZ(125px);
+  }
+  .cube__face--bottom {
+  	transform: rotateX(-90deg) translateZ(125px);
+  }
+
 }
 
 @media (min-width:1800px) {
