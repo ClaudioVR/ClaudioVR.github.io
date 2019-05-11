@@ -155,7 +155,8 @@ nav {
 .carousel {
   height: 500px;
   padding-top: -5rem;
-  overflow: visible;
+  /* overflow: visible; */
+  /* This line crashes carousel on safari... */
 }
 
 .carousel-item {
