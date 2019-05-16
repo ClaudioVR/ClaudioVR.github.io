@@ -40,18 +40,36 @@
     <li><a href="#about-me">about me</a></li>
   </ul>
 
-  <div class="cube-container">
-    <div class="scene">
-    <div class="cube">
-      <div class="cube__face cube__face--front"><p>welcome</p></div>
-      <div class="cube__face cube__face--back"><p>to</p></div>
-      <div class="cube__face cube__face--right"><p>claudio's</p></div>
-      <div class="cube__face cube__face--left"><p>front-end</p></div>
-      <div class="cube__face cube__face--top"><p>portfolio</p></div>
-      <div class="cube__face cube__face--bottom"><p>page!</p></div>
+  <div class="row" id="opening-row">
+  <div class="col s12 l5 offset-l2">
+    <div class="typed-container">
+      <div class="typed-js">
+        <span class="typed-js-element"></span>
+      </div>
     </div>
   </div>
+  <div class="col s12 l3 pull-l-2">
+    <div class="cube-container">
+      <div class="scene">
+        <div class="cube">
+          <div class="cube__face cube__face--front"><p>HTML5</p></div>
+          <div class="cube__face cube__face--back"><p>CSS3</p></div>
+          <div class="cube__face cube__face--right"><p>JavaScript</p></div>
+          <div class="cube__face cube__face--left"><p>Vue.js</p></div>
+          <div class="cube__face cube__face--top"><p>BootStrap</p></div>
+          <div class="cube__face cube__face--bottom"><p>jQuery</p></div>
+        </div>
+      </div>
+    </div>
   </div>
+</div>
+
+
+
+
+
+
+
 
   <!-- Carousel -->
   <div id="portfolio-carousel"></div>
@@ -70,7 +88,7 @@
         </div>
         <div class="card-content">
           <h5>Layer Animations</h5>
-          <p>Art always challenges and inspires my web styling. Watch <strong>CSS animations</strong> transform this canvass into its respective layers on :hover.</p>
+          <p>Art always challenges and inspires my web styling. Watch <strong>CSS animations</strong> transform this canvass into its respective layers on :hover.js.</p>
         </div>
         <div class="card-action">
           <a class="blue waves-effect waves-light btn" target="_blank" href="https://claudiovr.github.io/Odd-Tandberg-mockup/">View Project</a>
@@ -396,25 +414,8 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      delay: 400,
-      duration: 1000
-    });
-
-    document.addEventListener('DOMContentLoaded', function() {
-      var parallax = document.querySelectorAll('.parallax');
-      var parallaxInstances = M.Parallax.init(parallax);
-
-      var sidenav = document.querySelectorAll('.sidenav');
-      var sidenaviInstances = M.Sidenav.init(sidenav);
-
-      var carousel = document.querySelectorAll('.carousel');
-      var carouselInstances = M.Carousel.init(carousel, {
-        padding: 150
-      });
-    });
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+  <script src="./script.js"></script>
 
 </body>
 

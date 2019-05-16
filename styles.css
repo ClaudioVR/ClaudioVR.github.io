@@ -25,11 +25,44 @@ nav {
   color: black !important;
 }
 
+#opening-row {
+  height: 650px;
+}
+
+/* Typed.js ------------------------------*/
+
+.typed-container {
+  /* border: 3px solid red; */
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.typed-js {
+  /* border: 2px solid green; */
+  width: 60%;
+  margin-left: 2rem;
+}
+
+.typed-js-element p {
+  margin: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.typed-indent {
+  padding-left: 1rem;
+}
+
+/* /Typed.js ------------------------------ */
+
+
 /* Rotating cube ----------------------- */
 
 .cube-container {
   width: 100%;
-  height: 70vh;
+  height: 500px;
+  /* height: 70vh; */
   display: flex;
   align-items: center;
 }
@@ -327,6 +360,19 @@ footer li {
   .blob-6 {
     top: 45%;
     left: 15%;
+  }
+}
+
+@media (min-width: 992px) {
+  .typed-container {
+    height: 450px;
+  }
+  .typed-js-element p {
+    font-size: 1.6rem;
+  }
+  .typed-js {
+    width: 80%;
+    margin-left: 20%;
   }
 }
 
