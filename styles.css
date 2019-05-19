@@ -48,6 +48,7 @@ nav {
 .typed-js-element p {
   margin: 0.5rem;
   font-size: 1.3rem;
+  font-family: monospace;
 }
 
 .typed-indent {
