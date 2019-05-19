@@ -14,7 +14,8 @@
 
     var carousel = document.querySelectorAll('.carousel');
     var carouselInstances = M.Carousel.init(carousel, {
-      padding: 150
+      padding: 150,
+      numVisible: 7
     });
   });
 
