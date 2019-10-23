@@ -6,14 +6,14 @@
 
 //Materialize javascript
   document.addEventListener('DOMContentLoaded', function() {
-    var parallax = document.querySelectorAll('.parallax');
-    var parallaxInstances = M.Parallax.init(parallax);
+    const parallax = document.querySelectorAll('.parallax');
+    const parallaxInstances = M.Parallax.init(parallax);
 
-    var sidenav = document.querySelectorAll('.sidenav');
-    var sidenaviInstances = M.Sidenav.init(sidenav);
+    const sidenav = document.querySelectorAll('.sidenav');
+    const sidenaviInstances = M.Sidenav.init(sidenav);
 
-    var carousel = document.querySelectorAll('.carousel');
-    var carouselInstances = M.Carousel.init(carousel, {
+    const carousel = document.querySelectorAll('.carousel');
+    const carouselInstances = M.Carousel.init(carousel, {
       padding: 150,
       numVisible: 7
     });
