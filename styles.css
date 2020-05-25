@@ -25,8 +25,23 @@ nav {
   color: black !important;
 }
 
-#opening-row {
-  height: 650px;
+.intro-row{
+  /* height: 650px; */
+  margin-top: -70px;
+}
+
+.versatility-p{
+  margin-top: -35px;
+  color: #eee;
+}
+
+.agitlity-p {
+  color: #eee;
+  margin-top: -10px;
+}
+
+.agility-p-first{
+  margin-top: -25px;
 }
 
 /* Typed.js ------------------------------*/
@@ -275,19 +290,19 @@ nav {
   /* background: linear-gradient(#0d5d98, #1073bb); */
 }
 .blob-3 {
-  background-color: #0cb14b;
+  background-color: #fcb712;
   /* background: linear-gradient(#548955, #67a969); */
 }
 .blob-4 {
-  background-color: #f37020;
+  background-color: #008ad2;
   /* background: linear-gradient(#4a366d, #5b4386); */
 }
 .blob-5 {
-  background-color: #6460ac;
+  background-color: #f37020;
   /* background: linear-gradient(#304f97, #3558a8); */
 }
 .blob-6 {
-  background-color: #fcb712;
+  background-color: #0cb14b;
   /* background: linear-gradient(#4dba87, #435466); */
 }
 

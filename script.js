@@ -22,11 +22,11 @@
   //Typed.js
 
   var typed = new Typed('.typed-js-element', {
-  strings: ['<p>.claudio {</p> <p class="typed-indent">mindset: analytical;</p> <p class="typed-indent">traits: 50% curious, 50% inquisitive;</p> <p class="typed-indent">ability: calc( flexible + adaptable );</p> <p class="typed-indent">do-best: problem-solving;</p> <p class="typed-indent">love: learning;</p> <p class="typed-indent">project-role: team-player;</p> <p class="typed-indent">fav-food: pizza;</p> <p>}</p>'],
-  typeSpeed: 65,
+  strings: ['<p>.claudio {</p> <p class="typed-indent">front-end-developer;</p> <p class="typed-indent">oslo, norway;</p> <p class="typed-indent">agile, team-player, problem solver;</p> <p class="typed-indent">fav food: pizza;</p> <p>}</p>'],
+  typeSpeed: 35,
   showCursor: false,
-  loop: true,
-  loopCount: 3,
-  startDelay: 1000,
+  loop: false,
+  loopCount: 1,
+  startDelay: 1500,
   cursorChar: '|',
 });
